@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33ADF7221BBA6224007FFE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF7211BBA6224007FFE60 /* main.m */; };
+		33ADF7251BBA6224007FFE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF7241BBA6224007FFE60 /* AppDelegate.m */; };
+		33ADF7281BBA6224007FFE60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF7271BBA6224007FFE60 /* ViewController.m */; };
+		33ADF72B1BBA6225007FFE60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33ADF7291BBA6225007FFE60 /* Main.storyboard */; };
+		33ADF72E1BBA6225007FFE60 /* CustomKeyboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF72C1BBA6225007FFE60 /* CustomKeyboard.xcdatamodeld */; };
+		33ADF7301BBA6225007FFE60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33ADF72F1BBA6225007FFE60 /* Assets.xcassets */; };
+		33ADF7331BBA6225007FFE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33ADF7311BBA6225007FFE60 /* LaunchScreen.storyboard */; };
+		33ADF7421BBA6244007FFE60 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF7411BBA6244007FFE60 /* KeyboardViewController.m */; };
+		33ADF7461BBA6244007FFE60 /* MediaKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33ADF73E1BBA6243007FFE60 /* MediaKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33ADF74D1BBA739F007FFE60 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF74C1BBA739F007FFE60 /* CollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		33ADF74F1BBA73B8007FFE60 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33ADF74E1BBA73B8007FFE60 /* CollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		33ADF7521BBA7FEC007FFE60 /* FetchAssetsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF7511BBA7FEC007FFE60 /* FetchAssetsCommand.m */; settings = {ASSET_TAGS = (); }; };
+		33ADF7551BBA806B007FFE60 /* CommandOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF7541BBA806B007FFE60 /* CommandOperationQueue.m */; settings = {ASSET_TAGS = (); }; };
+		33ADF7561BBA806B007FFE60 /* CommandOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF7541BBA806B007FFE60 /* CommandOperationQueue.m */; settings = {ASSET_TAGS = (); }; };
+		33ADF7571BBA809C007FFE60 /* FetchAssetsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF7511BBA7FEC007FFE60 /* FetchAssetsCommand.m */; };
+		33ADF75C1BBA881F007FFE60 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADF75B1BBA881F007FFE60 /* Photos.framework */; };
+		33ADF75D1BBA8827007FFE60 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADF75B1BBA881F007FFE60 /* Photos.framework */; };
+		33ADF75F1BBA9344007FFE60 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADF75E1BBA9344007FFE60 /* AssetsLibrary.framework */; };
+		33ADF7601BBA934A007FFE60 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ADF75E1BBA9344007FFE60 /* AssetsLibrary.framework */; };
+		33B458881BBC564B00CEB633 /* AssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B458871BBC564B00CEB633 /* AssetModel.m */; settings = {ASSET_TAGS = (); }; };
+		33B458891BBC564B00CEB633 /* AssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B458871BBC564B00CEB633 /* AssetModel.m */; settings = {ASSET_TAGS = (); }; };
+		33B4588C1BBC5AED00CEB633 /* CopyToClipboardCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B4588B1BBC5AED00CEB633 /* CopyToClipboardCommand.m */; settings = {ASSET_TAGS = (); }; };
+		33B4588D1BBC5AED00CEB633 /* CopyToClipboardCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B4588B1BBC5AED00CEB633 /* CopyToClipboardCommand.m */; settings = {ASSET_TAGS = (); }; };
+		33B458901BBC5B4400CEB633 /* BaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B4588F1BBC5B4400CEB633 /* BaseCommand.m */; settings = {ASSET_TAGS = (); }; };
+		33B458911BBC5B4400CEB633 /* BaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B4588F1BBC5B4400CEB633 /* BaseCommand.m */; settings = {ASSET_TAGS = (); }; };
+		33D9C5A51BBB0EFA002FE221 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ADF74C1BBA739F007FFE60 /* CollectionViewCell.m */; };
+		33D9C5A61BBB0F02002FE221 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33ADF74E1BBA73B8007FFE60 /* CollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33ADF7441BBA6244007FFE60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33ADF7151BBA6224007FFE60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33ADF73D1BBA6243007FFE60;
+			remoteInfo = MediaKeyboardExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33ADF74A1BBA6244007FFE60 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				33ADF7461BBA6244007FFE60 /* MediaKeyboardExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33ADF71D1BBA6224007FFE60 /* CustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33ADF7211BBA6224007FFE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33ADF7231BBA6224007FFE60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33ADF7241BBA6224007FFE60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33ADF7261BBA6224007FFE60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		33ADF7271BBA6224007FFE60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33ADF72A1BBA6225007FFE60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33ADF72D1BBA6225007FFE60 /* CustomKeyboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CustomKeyboard.xcdatamodel; sourceTree = "<group>"; };
+		33ADF72F1BBA6225007FFE60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33ADF7321BBA6225007FFE60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33ADF7341BBA6225007FFE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33ADF73E1BBA6243007FFE60 /* MediaKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MediaKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		33ADF7401BBA6244007FFE60 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		33ADF7411BBA6244007FFE60 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		33ADF7431BBA6244007FFE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33ADF74B1BBA739F007FFE60 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		33ADF74C1BBA739F007FFE60 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		33ADF74E1BBA73B8007FFE60 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		33ADF7501BBA7FEC007FFE60 /* FetchAssetsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchAssetsCommand.h; sourceTree = "<group>"; };
+		33ADF7511BBA7FEC007FFE60 /* FetchAssetsCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchAssetsCommand.m; sourceTree = "<group>"; };
+		33ADF7531BBA806B007FFE60 /* CommandOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandOperationQueue.h; sourceTree = "<group>"; };
+		33ADF7541BBA806B007FFE60 /* CommandOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandOperationQueue.m; sourceTree = "<group>"; };
+		33ADF75B1BBA881F007FFE60 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		33ADF75E1BBA9344007FFE60 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		33B458861BBC564B00CEB633 /* AssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetModel.h; sourceTree = "<group>"; };
+		33B458871BBC564B00CEB633 /* AssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetModel.m; sourceTree = "<group>"; };
+		33B4588A1BBC5AED00CEB633 /* CopyToClipboardCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyToClipboardCommand.h; sourceTree = "<group>"; };
+		33B4588B1BBC5AED00CEB633 /* CopyToClipboardCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyToClipboardCommand.m; sourceTree = "<group>"; };
+		33B4588E1BBC5B4400CEB633 /* BaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCommand.h; sourceTree = "<group>"; };
+		33B4588F1BBC5B4400CEB633 /* BaseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCommand.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33ADF71A1BBA6224007FFE60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33ADF75F1BBA9344007FFE60 /* AssetsLibrary.framework in Frameworks */,
+				33ADF75C1BBA881F007FFE60 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33ADF73B1BBA6243007FFE60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33ADF7601BBA934A007FFE60 /* AssetsLibrary.framework in Frameworks */,
+				33ADF75D1BBA8827007FFE60 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33ADF7141BBA6224007FFE60 = {
+			isa = PBXGroup;
+			children = (
+				33ADF75E1BBA9344007FFE60 /* AssetsLibrary.framework */,
+				33ADF75B1BBA881F007FFE60 /* Photos.framework */,
+				33ADF71F1BBA6224007FFE60 /* CustomKeyboard */,
+				33ADF73F1BBA6243007FFE60 /* MediaKeyboardExtension */,
+				33ADF71E1BBA6224007FFE60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33ADF71E1BBA6224007FFE60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33ADF71D1BBA6224007FFE60 /* CustomKeyboard.app */,
+				33ADF73E1BBA6243007FFE60 /* MediaKeyboardExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33ADF71F1BBA6224007FFE60 /* CustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33ADF7231BBA6224007FFE60 /* AppDelegate.h */,
+				33ADF7241BBA6224007FFE60 /* AppDelegate.m */,
+				33ADF7261BBA6224007FFE60 /* ViewController.h */,
+				33ADF7271BBA6224007FFE60 /* ViewController.m */,
+				33ADF7291BBA6225007FFE60 /* Main.storyboard */,
+				33ADF72F1BBA6225007FFE60 /* Assets.xcassets */,
+				33ADF7311BBA6225007FFE60 /* LaunchScreen.storyboard */,
+				33ADF7341BBA6225007FFE60 /* Info.plist */,
+				33ADF72C1BBA6225007FFE60 /* CustomKeyboard.xcdatamodeld */,
+				33ADF7201BBA6224007FFE60 /* Supporting Files */,
+				33B458941BBC830600CEB633 /* Cell */,
+				33B458921BBC82EA00CEB633 /* Commands */,
+				33B458931BBC82F300CEB633 /* Model */,
+			);
+			path = CustomKeyboard;
+			sourceTree = "<group>";
+		};
+		33ADF7201BBA6224007FFE60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33ADF7211BBA6224007FFE60 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33ADF73F1BBA6243007FFE60 /* MediaKeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				33ADF7401BBA6244007FFE60 /* KeyboardViewController.h */,
+				33ADF7411BBA6244007FFE60 /* KeyboardViewController.m */,
+				33ADF7431BBA6244007FFE60 /* Info.plist */,
+			);
+			path = MediaKeyboardExtension;
+			sourceTree = "<group>";
+		};
+		33B458921BBC82EA00CEB633 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				33ADF7531BBA806B007FFE60 /* CommandOperationQueue.h */,
+				33ADF7541BBA806B007FFE60 /* CommandOperationQueue.m */,
+				33ADF7501BBA7FEC007FFE60 /* FetchAssetsCommand.h */,
+				33ADF7511BBA7FEC007FFE60 /* FetchAssetsCommand.m */,
+				33B4588A1BBC5AED00CEB633 /* CopyToClipboardCommand.h */,
+				33B4588B1BBC5AED00CEB633 /* CopyToClipboardCommand.m */,
+				33B4588E1BBC5B4400CEB633 /* BaseCommand.h */,
+				33B4588F1BBC5B4400CEB633 /* BaseCommand.m */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		33B458931BBC82F300CEB633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33B458861BBC564B00CEB633 /* AssetModel.h */,
+				33B458871BBC564B00CEB633 /* AssetModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		33B458941BBC830600CEB633 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				33ADF74B1BBA739F007FFE60 /* CollectionViewCell.h */,
+				33ADF74C1BBA739F007FFE60 /* CollectionViewCell.m */,
+				33ADF74E1BBA73B8007FFE60 /* CollectionViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33ADF71C1BBA6224007FFE60 /* CustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33ADF7371BBA6225007FFE60 /* Build configuration list for PBXNativeTarget "CustomKeyboard" */;
+			buildPhases = (
+				33ADF7191BBA6224007FFE60 /* Sources */,
+				33ADF71A1BBA6224007FFE60 /* Frameworks */,
+				33ADF71B1BBA6224007FFE60 /* Resources */,
+				33ADF74A1BBA6244007FFE60 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33ADF7451BBA6244007FFE60 /* PBXTargetDependency */,
+			);
+			name = CustomKeyboard;
+			productName = CustomKeyboard;
+			productReference = 33ADF71D1BBA6224007FFE60 /* CustomKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33ADF73D1BBA6243007FFE60 /* MediaKeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33ADF7471BBA6244007FFE60 /* Build configuration list for PBXNativeTarget "MediaKeyboardExtension" */;
+			buildPhases = (
+				33ADF73A1BBA6243007FFE60 /* Sources */,
+				33ADF73B1BBA6243007FFE60 /* Frameworks */,
+				33ADF73C1BBA6243007FFE60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaKeyboardExtension;
+			productName = MediaKeyboardExtension;
+			productReference = 33ADF73E1BBA6243007FFE60 /* MediaKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33ADF7151BBA6224007FFE60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "SAALIS UMER";
+				TargetAttributes = {
+					33ADF71C1BBA6224007FFE60 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					33ADF73D1BBA6243007FFE60 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 33ADF7181BBA6224007FFE60 /* Build configuration list for PBXProject "CustomKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33ADF7141BBA6224007FFE60;
+			productRefGroup = 33ADF71E1BBA6224007FFE60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33ADF71C1BBA6224007FFE60 /* CustomKeyboard */,
+				33ADF73D1BBA6243007FFE60 /* MediaKeyboardExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33ADF71B1BBA6224007FFE60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33ADF7331BBA6225007FFE60 /* LaunchScreen.storyboard in Resources */,
+				33ADF7301BBA6225007FFE60 /* Assets.xcassets in Resources */,
+				33ADF74F1BBA73B8007FFE60 /* CollectionViewCell.xib in Resources */,
+				33ADF72B1BBA6225007FFE60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33ADF73C1BBA6243007FFE60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D9C5A61BBB0F02002FE221 /* CollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33ADF7191BBA6224007FFE60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B458881BBC564B00CEB633 /* AssetModel.m in Sources */,
+				33ADF7281BBA6224007FFE60 /* ViewController.m in Sources */,
+				33ADF7521BBA7FEC007FFE60 /* FetchAssetsCommand.m in Sources */,
+				33ADF74D1BBA739F007FFE60 /* CollectionViewCell.m in Sources */,
+				33B458901BBC5B4400CEB633 /* BaseCommand.m in Sources */,
+				33ADF7251BBA6224007FFE60 /* AppDelegate.m in Sources */,
+				33ADF7551BBA806B007FFE60 /* CommandOperationQueue.m in Sources */,
+				33B4588C1BBC5AED00CEB633 /* CopyToClipboardCommand.m in Sources */,
+				33ADF7221BBA6224007FFE60 /* main.m in Sources */,
+				33ADF72E1BBA6225007FFE60 /* CustomKeyboard.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33ADF73A1BBA6243007FFE60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B458911BBC5B4400CEB633 /* BaseCommand.m in Sources */,
+				33B4588D1BBC5AED00CEB633 /* CopyToClipboardCommand.m in Sources */,
+				33D9C5A51BBB0EFA002FE221 /* CollectionViewCell.m in Sources */,
+				33B458891BBC564B00CEB633 /* AssetModel.m in Sources */,
+				33ADF7571BBA809C007FFE60 /* FetchAssetsCommand.m in Sources */,
+				33ADF7421BBA6244007FFE60 /* KeyboardViewController.m in Sources */,
+				33ADF7561BBA806B007FFE60 /* CommandOperationQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33ADF7451BBA6244007FFE60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33ADF73D1BBA6243007FFE60 /* MediaKeyboardExtension */;
+			targetProxy = 33ADF7441BBA6244007FFE60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33ADF7291BBA6225007FFE60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33ADF72A1BBA6225007FFE60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33ADF7311BBA6225007FFE60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33ADF7321BBA6225007FFE60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33ADF7351BBA6225007FFE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: RAMAN GULATI (KA375KDJPV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: RAMAN GULATI (KA375KDJPV)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a3a349f2-58de-44ba-9b7a-455dec2918c9";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33ADF7361BBA6225007FFE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "a3a349f2-58de-44ba-9b7a-455dec2918c9";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33ADF7381BBA6225007FFE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bobble.CustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33ADF7391BBA6225007FFE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bobble.CustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33ADF7481BBA6244007FFE60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MediaKeyboardExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bobble.CustomKeyboard.MediaKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a3a349f2-58de-44ba-9b7a-455dec2918c9";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		33ADF7491BBA6244007FFE60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MediaKeyboardExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bobble.CustomKeyboard.MediaKeyboardExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a3a349f2-58de-44ba-9b7a-455dec2918c9";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33ADF7181BBA6224007FFE60 /* Build configuration list for PBXProject "CustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33ADF7351BBA6225007FFE60 /* Debug */,
+				33ADF7361BBA6225007FFE60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33ADF7371BBA6225007FFE60 /* Build configuration list for PBXNativeTarget "CustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33ADF7381BBA6225007FFE60 /* Debug */,
+				33ADF7391BBA6225007FFE60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33ADF7471BBA6244007FFE60 /* Build configuration list for PBXNativeTarget "MediaKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33ADF7481BBA6244007FFE60 /* Debug */,
+				33ADF7491BBA6244007FFE60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		33ADF72C1BBA6225007FFE60 /* CustomKeyboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				33ADF72D1BBA6225007FFE60 /* CustomKeyboard.xcdatamodel */,
+			);
+			currentVersion = 33ADF72D1BBA6225007FFE60 /* CustomKeyboard.xcdatamodel */;
+			path = CustomKeyboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 33ADF7151BBA6224007FFE60 /* Project object */;
+}

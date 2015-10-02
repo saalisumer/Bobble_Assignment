@@ -11,6 +11,26 @@
 #import <Photos/Photos.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "AssetModel.h"
+#import <CommonCrypto/CommonDigest.h>
+
+@interface NSString(MD5)
+- (NSString *)MD5String;
+@end
+
+@implementation NSString(MD5)
+- (NSString *)MD5String {
+    const char* str = [self UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(str, (CC_LONG)strlen(str), result);
+    
+    NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
+    for(int i = 0; i<CC_MD5_DIGEST_LENGTH; i++) {
+        [ret appendFormat:@"%02x",result[i]];
+    }
+    return ret;
+}
+@end
+
 
 @interface FetchAssetsCommand()
 
@@ -55,7 +75,7 @@
             asset.image = img;
             if ([[result valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypeVideo]) {
                 asset.assetType = AssetTypeVideo;
-                asset.url = [self writeVideoFileIntoTemp:result.defaultRepresentation.url.lastPathComponent andAsset:result];
+                asset.url = [self writeVideoFileIntoTemp:result.defaultRepresentation.url.absoluteString andAsset:result];
             }
             else
             {
@@ -71,7 +91,7 @@
 
 -(NSString*) writeVideoFileIntoTemp:(NSString*)fileName andAsset:(ALAsset*)asset
 {
-    NSString * tmpfile = [NSTemporaryDirectory() stringByAppendingPathComponent:fileName];
+    NSString * tmpfile = [NSTemporaryDirectory() stringByAppendingPathComponent:[fileName MD5String]];
     ALAssetRepresentation * rep = [asset defaultRepresentation];
     
     NSUInteger size = [rep size];
